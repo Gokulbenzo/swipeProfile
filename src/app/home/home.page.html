@@ -1,0 +1,19 @@
+<div class="header">
+  <p>My Matches</p>
+  <p>8 Profile Pending with me <button [routerLink]="['/swipe-profile']">{{(profileDatasFromServer ? profileDatasFromServer.length : 0) + ' ' + 'NEW'}}</button> </p>
+
+</div>
+<div class="container">
+
+  <div class="grid">
+    <div class="card" *ngFor="let data of profileDatasFromServer; let i = index">
+      <img src="{{data.image}}" alt="Card Image" [routerLink]="['/view-profile']" [queryParams]="{ profileId : i }">
+      <div class="card-content">
+        <h3 class="card-title">{{data.name}}</h3>
+        <h5 class="card-description">{{data.age + ', ' + data.Height + ', ' + data.language + ', ' + data.caste}}</h5>
+        <h5 class="card-description">{{data.profession + ', ' + data.city + ', ' + data.state }}</h5>
+        <button class="forYes" [routerLink]="['/view-profile']" [queryParams]="{ profileId : i }">{{'Yes'}}</button>
+        <button (click)="removeProfile(i)">{{'No'}}</button>
+      </div>
+    </div>
+  </div>

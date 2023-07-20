@@ -1,0 +1,85 @@
+.profile-container {
+  position: relative;
+
+  &-backBtn {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    background: navajowhite;
+    background-color: transparent;
+  }
+
+  ion-icon {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  background-color: #4267B2;
+}
+
+.profile {
+  &-picture {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -75px;
+    left: 5%;
+    border: 5px solid #f9f9fb;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  } 
+  &-Details {
+    position: relative;
+    left: 10%;
+    top: 15%;
+  }
+
+  &-Name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+ 
+}
+
+.mobView {
+  height: 100%;
+  img {
+    height: 70vh;
+    width: 100%;
+  }
+  &-1 {
+    height: 70%;
+    button {
+      top: 6%;
+      position: absolute;
+      left: 8%;  
+      color: white;
+      background: none;
+    }
+    ion-icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  &-2 {
+    height: 30%;
+  }
+  &-name {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+  }
+  &-des {
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  &-backBtn {
+    color: white;
+  }
+}

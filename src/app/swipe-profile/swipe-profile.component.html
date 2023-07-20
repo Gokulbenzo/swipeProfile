@@ -1,0 +1,25 @@
+<div class="container">
+  <button class="backBtn" (click)="backToProfile()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </button>
+  
+  <div class="grid" #card>
+    <div class="card" [@cardAnimator]="animationState" (@cardAnimator.done)="resetAnimationState($event)"
+      *ngIf="profileDatasFromServer">
+      <img [src]="profileDatasFromServer[index]?.image" title="tphoto" alt="Tinder Photo" />
+      <div class="tname">{{profileDatasFromServer[index]?.name}}</div>
+      <div class="detail">{{profileDatasFromServer[index].age + ', ' + profileDatasFromServer[index].Height + ', ' +
+        profileDatasFromServer[index].language + ', ' + profileDatasFromServer[index].caste}}</div>
+      <div class="detail">{{profileDatasFromServer[index].profession + ', ' + profileDatasFromServer[index].city + ', ' +
+        profileDatasFromServer[index].state }}</div>
+      <div class="shortlist">
+        <span class="shortlist-1"><ion-icon (click)="shortList()" style="cursor: pointer;" name="star-outline"></ion-icon>
+          Shortlist</span>
+        <span class="shortlist-2">Like Her ?<ion-icon name="close-outline" (click)="left()"></ion-icon><ion-icon
+            style="background-color: orange;" name="checkmark-outline" (click)="right()"></ion-icon></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <p>Swipe To Select</p> -->

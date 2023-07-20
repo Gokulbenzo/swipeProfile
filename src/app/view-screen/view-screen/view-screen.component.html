@@ -1,0 +1,33 @@
+  <div class="profile-container" [appHideElement]="false">
+    <button class="profile-container-backBtn" (click)="backToProfile()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </button>
+    <img class="banner" src="/assets/icon/banner.jpeg">
+  
+    <img class="profile-picture" src="{{profileDatasFromServer?.image}}">
+  </div>
+  
+  <div class="profile-Details" *ngIf="profileDatasFromServer" [appHideElement]="false">
+    <h3 class="profile-Name">{{profileDatasFromServer.name}}</h3>
+    <h5 class="profile-description">{{profileDatasFromServer.age + ', ' + profileDatasFromServer.Height + ', ' +
+      profileDatasFromServer.language + ', ' + profileDatasFromServer.caste}}</h5>
+    <h5 class="profile-description">{{profileDatasFromServer.profession + ', ' + profileDatasFromServer.city + ', ' +
+      profileDatasFromServer.state }}</h5>
+  </div>
+
+
+<ion-row class="mobView" *ngIf="profileDatasFromServer" [appHideElement]="true">
+  <ion-col class="mobView-1" size="12">
+    <button (click)="backToProfile()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </button>
+    <img src="{{profileDatasFromServer?.image}}">
+  </ion-col>
+  <ion-col class="mobView-2" size="12">
+    <div class="mobView-name">{{profileDatasFromServer.name}}</div>
+  <div class="mobView-des">{{profileDatasFromServer.age + ', ' + profileDatasFromServer.Height + ', ' +
+    profileDatasFromServer.language + ', ' + profileDatasFromServer.caste}}</div>
+  <div class="mobView-des">{{profileDatasFromServer.profession + ', ' + profileDatasFromServer.city + ', ' +
+    profileDatasFromServer.state }}</div>
+  </ion-col>
+</ion-row>

@@ -1,0 +1,65 @@
+[  
+  {  
+    "id": 1,  
+    "name": "Priyanka",  
+    "age": "27 Yrs",  
+    "Height": "5 ft 2 in",
+    "language": "Tamil",
+    "caste": "Nair",
+    "profession": "MBBS, Doctor",
+    "state": "Tamilnadu, India",
+    "city": "Chennai",
+    "image": "/assets/icon/ID_1.jpeg"
+  },  
+  {  
+    "id": 2,  
+    "name": "Kavitha",  
+    "age": "27 Yrs",  
+    "Height": "5 ft 2 in",
+    "language": "Tamil",
+    "caste": "Nair",
+    "profession": "MBBS, Doctor",
+    "state": "Tamilnadu, India",
+    "city": "Chennai",
+    "image": "/assets/icon/ID_2.jpeg"
+
+  },  
+  {  
+    "id": 3,  
+    "name": "Kowsalya",  
+    "age": "27 Yrs",  
+    "Height": "5 ft 2 in",
+    "language": "Tamil",
+    "caste": "Nair",
+    "profession": "MBBS, Doctor",
+    "state": "Tamilnadu, India",
+    "city": "Chennai" ,
+    "image": "/assets/icon/ID_3.jpeg"
+
+  },  
+  {  
+    "id": 4,  
+    "name": "Mohana",  
+    "age": "27 Yrs",  
+    "Height": "5 ft 2 in",
+    "language": "Tamil",
+    "caste": "Nair",
+    "profession": "MBBS, Doctor",
+    "state": "Tamilnadu, India",
+    "city": "Chennai",
+    "image": "/assets/icon/ID_4.jpeg"
+
+  },  
+  {  
+    "id": 5,  
+    "name": "Nazriya",  
+    "age": "27 Yrs",  
+    "Height": "5 ft 2 in",
+    "language": "Tamil",
+    "caste": "Nair",
+    "profession": "MBBS, Doctor",
+    "state": "Tamilnadu, India",
+    "city": "Chennai" ,
+    "image": "/assets/icon/ID_5.jpeg"
+}  
+]  

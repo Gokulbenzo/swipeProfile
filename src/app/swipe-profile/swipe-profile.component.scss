@@ -1,0 +1,98 @@
+.container {
+  height: 100%;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  background-color: #fff;
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+  @media (max-width: 767px) {
+    height: 90vh !important;
+    width: 100%;
+  }
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 72%;
+  pointer-events: none;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.tname {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.detail {
+  padding-left: 10px;
+  font-size: 10px;
+}
+
+.shortlist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0 15px 0;
+
+  &-2 {
+    display: flex;
+    cursor: pointer;
+
+    ion-icon {
+      width: 40px;
+      border-radius: 35px;
+      border: 1px solid black;
+      margin-left: 4px;
+    }
+
+  }
+}
+
+.backBtn {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background: none;
+
+  @media (max-width: 767px) {
+    top: 8%;
+    left: 15%;
+    background: none;
+    color: white;
+  }
+
+
+  ion-icon {
+    height: 20px;
+    width: 20px;
+  }
+}
